@@ -53,6 +53,7 @@
         </ul>
       </div>
     </nav>
+    <!-- Landing Page -->
 
     <!-- About Section -->
     <section>
@@ -106,52 +107,75 @@
 
     <!-- Projects -->
     <section>
-      <div></div>
+      <div>
+        <div><h1>Portfolio</h1></div>
+        <div>
+          <div class="card bg-dark text-white">
+            <img src="./assets/github.png" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <div>
-      <form
-        id="fs-frm"
-        name="simple-contact-form"
-        accept-charset="utf-8"
-        action="https://formspree.io/f/xlezbypy"
-        method="post"
-      >
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input
-            type="text"
-            name="name"
-            id="full-name"
-            placeholder="First and Last"
-            required=""
-          />
-          <label for="email-address">Email Address</label>
-          <input
-            type="email"
-            name="_replyto"
-            id="email-address"
-            placeholder="email@domain.tld"
-            required=""
-          />
-          <label for="message">Message</label>
-          <textarea
-            rows="5"
-            name="message"
-            id="message"
-            placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
-            required=""
-          ></textarea>
-          <input
-            type="hidden"
-            name="_subject"
-            id="email-subject"
-            value="Contact Form Submission"
-          />
-        </fieldset>
-        <input type="submit" value="Submit" />
-      </form>
+      <div><h1>Contact Me</h1></div>
+      <div>
+        <form
+          id="fs-frm"
+          name="simple-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/xlezbypy"
+          method="post"
+        >
+          <fieldset id="fs-frm-inputs">
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              placeholder="Full Name*"
+              required=""
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject*"
+              required=""
+            />
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="Email*"
+              required=""
+            />
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Message*"
+              required=""
+            ></textarea>
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Contact Form Submission"
+            />
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
