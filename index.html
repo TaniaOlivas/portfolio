@@ -20,201 +20,339 @@
     <title>Tania Olivas</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Tania Olivas</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Landing Page -->
-
-    <!-- About Section -->
-    <section>
-      <div><h1>About Me</h1></div>
-      <div>
-        <div><img src="./assets/Picture.jpeg" alt="Picture of Me" /></div>
-        <div>
-          <p>
-            Hello! My name is Tania Olivas and I am a current student at Eleven
-            Fifty Academy enrolled in the Web Development course. I hope to one
-            day become a Front End Developer and join the tech world.
-          </p>
-          <ul>
-            A little bit about me:
-            <li>
-              I was born and raised in Frankfort, Indiana after my parents
-              immigrated there from Mexico in 1996. 🇺🇸 🇲🇽
-            </li>
-            <li>
-              I am a graduate of IUPUI with a bachelors in Health Services
-              Management.
-            </li>
-            <li>
-              I pride myself in my work ethic and leadership skill and have an
-              affinity to problem solve.
-            </li>
-          </ul>
-          <p>
-            After spending time as a Nursing Home Administrator for 2 years, I
-            felt that my strengths did not quite line up with my role and
-            decided to take a leap of faith and join the tech world.
-          </p>
-          <a href="./assets/resume.docx.pdf" target="_blank">Download Resume</a>
-          <a href="https://github.com/TaniaOlivas"
-            ><img
-              width="30"
-              height="30"
-              src="./assets/github.png"
-              alt="GitHub Link"
-          /></a>
-          <a href="https://www.linkedin.com/in/tolivas/"
-            ><img
-              width="30"
-              height="30"
-              src="./assets/linkedIn.png"
-              alt="LinkedIn Link"
-          /></a>
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand color-me" href="#">Tania Olivas</a>
+            <button
+              class="navbar-toggler color-me"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon color-me"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse color-me"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a class="nav-link color-me" aria-current="page" href="#intro"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link color-me" href="#about">About</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link color-me" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link color-me" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Landing Page -->
+      <section id="intro">
+        <div class="back">
+          <div class="backgroundImage"></div>
+          <div class="introText">
+            <h1 class="h1Text">Tania Olivas</h1>
+            <h5>Junior Web Developer</h5>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects -->
-    <section>
-      <div>
-        <div><h1>Portfolio</h1></div>
-        <div>
-          <div class="card bg-dark text-white">
-            <img src="./assets/github.png" class="card-img" alt="..." />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+      <!-- About Section -->
+      <section id="about">
+        <div class="container">
+          <h1 class="text-center pb-4 pt-4">About Me</h1>
+          <div class="row">
+            <div class="col-lg-5 text-center">
+              <img
+                src="./assets/Picture.jpeg"
+                alt="Picture of Me"
+                class="selfPic"
+              />
+            </div>
+            <div class="col-lg-7 pText">
+              <p>
+                Hello! My name is Tania Olivas and I am a current student at
+                Eleven Fifty Academy enrolled in the Web Development course. I
+                hope to one day become a Front End Developer and join the tech
+                world.
               </p>
-              <p class="card-text">Last updated 3 mins ago</p>
+              <ul>
+                <li>
+                  A little bit about me:
+                  <ul>
+                    <li>
+                      I was born and raised in Frankfort, Indiana after my
+                      parents immigrated there from Mexico in 1996.
+                    </li>
+                    <li>
+                      I am a graduate of IUPUI with a Bachelors in Health
+                      Services Management.
+                    </li>
+                    <li>
+                      I have an adventurous spirit and love being outdoors, but
+                      also love to sit down with a good book or a tough puzzle.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p>
+                After spending time as a Nursing Home Administrator for 2 years,
+                I felt that my strengths did not quite line up with my role and
+                decided to take a leap of faith and join the tech world.
+              </p>
+              <div class="text-center">
+                <a href="./assets/resume.docx.pdf" target="_blank"
+                  ><button class="btn m-3">Download Resume</button></a
+                >
+                <a href="https://github.com/TaniaOlivas"
+                  ><img
+                    width="45"
+                    height="45"
+                    class="logo m-3"
+                    src="./assets/github.png"
+                    alt="GitHub Link"
+                /></a>
+                <a href="https://www.linkedin.com/in/tolivas/"
+                  ><img
+                    width="40"
+                    height="40"
+                    class="logo m-3"
+                    src="./assets/linkedIn.png"
+                    alt="LinkedIn Link"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <div>
-      <div><h1>Contact Me</h1></div>
-      <div>
-        <form
-          id="fs-frm"
-          name="simple-contact-form"
-          accept-charset="utf-8"
-          action="https://formspree.io/f/xlezbypy"
-          method="post"
-        >
-          <fieldset id="fs-frm-inputs">
-            <input
-              type="text"
-              name="name"
-              id="full-name"
-              placeholder="Full Name*"
-              required=""
-            />
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject*"
-              required=""
-            />
-            <input
-              type="email"
-              name="_replyto"
-              id="email-address"
-              placeholder="Email*"
-              required=""
-            />
-            <textarea
-              rows="5"
-              name="message"
-              id="message"
-              placeholder="Message*"
-              required=""
-            ></textarea>
-            <input
-              type="hidden"
-              name="_subject"
-              id="email-subject"
-              value="Contact Form Submission"
-            />
-          </fieldset>
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+      <!-- Projects -->
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="text-center pb-4 pt-4">Portfolio</h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col text-center">
+              <div class="card h-100">
+                <img
+                  src="./assets/i8that.png"
+                  class="card-img-top p-3"
+                  alt="i8That Home Page"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">i8That App</h5>
+                  <p class="card-text">
+                    A full stack website made with PostgresSQL, Express,
+                    React.js, Node.js.
+                  </p>
+                  <a href="https://to-i8that-client.herokuapp.com/" class="btn"
+                    >Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100">
+                <img
+                  src="./assets/cafeOlivas.png"
+                  class="card-img-top p-3"
+                  alt="Cafe Olivas Home Page"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Café Olivas</h5>
+                  <p class="card-text">
+                    A static demo page made strictly with HTML5 and CSS3.
+                  </p>
+                  <a href="#" class="btn">Visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100">
+                <img
+                  src="./assets/earthlandscape.jpeg"
+                  height="42%"
+                  class="card-img-top p-3"
+                  alt="Cafe Olivas Home Page"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Red Badge Project</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt natus obcaecati perspiciatis eligendi maiores quis
+                    tenetur.
+                  </p>
+                  <a href="#" class="btn">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div class="container pt-4">
+          <h1 class="text-center pb-4 pt-4">Contact</h1>
+          <div class="contactMe">
+            <div>
+              <h3 class="text-center pb-4">
+                Would you like to get in touch with me?
+              </h3>
+            </div>
+            <div class="text-center pt-2 pb-4">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Contact Me
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="exampleModalLabel">
+                        Contact Me
+                      </h3>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form
+                        id="fs-frm"
+                        name="simple-contact-form"
+                        accept-charset="utf-8"
+                        action="https://formspree.io/f/xlezbypy"
+                        method="post"
+                      >
+                        <fieldset id="fs-frm-inputs">
+                          <input
+                            type="text"
+                            name="name"
+                            id="full-name"
+                            placeholder="Full Name*"
+                            required=""
+                          /><input
+                            type="email"
+                            name="_replyto"
+                            id="email-address"
+                            placeholder="Email Address*"
+                            required=""
+                          />
+                        </fieldset>
+                        <fieldset id="fs-frm-inputs">
+                          <input
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject*"
+                            required=""
+                          />
+
+                          <textarea
+                            rows="5"
+                            name="message"
+                            id="message"
+                            placeholder="Message*"
+                            required=""
+                          ></textarea>
+                          <input
+                            type="hidden"
+                            name="_subject"
+                            id="email-subject"
+                            value="Contact Form Submission"
+                          />
+                        </fieldset>
+                        <hr />
+                        <input class="me-3" type="submit" value="Submit" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span>© Tania Olivas</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3 me-2">
+            <a href="./assets/resume.docx.pdf"
+              ><img
+                class="smallLogo"
+                width="30"
+                height="30"
+                src="./assets/download.png"
+                alt="Resume Download"
+            /></a>
+          </li>
+
+          <li class="ms-3 me-2">
+            <a href="https://github.com/TaniaOlivas"
+              ><img
+                class="smallLogo"
+                width="30"
+                height="30"
+                src="./assets/github.png"
+                alt="GitHub Link"
+            /></a>
+          </li>
+          <li class="ms-3 me-4">
+            <a href="https://www.linkedin.com/in/tolivas/"
+              ><img
+                class="smallLogo"
+                width="30"
+                height="30"
+                src="./assets/linkedIn.png"
+                alt="LinkedIn Link"
+            /></a>
+          </li>
+        </ul>
+      </footer>
     </div>
-
-    <!-- Footer -->
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-    >
-      <div class="col-md-4 d-flex align-items-center">
-        <a
-          href="/"
-          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-        >
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="text-muted">© Tania Olivas</span>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a class="text-muted" href="https://github.com/TaniaOlivas"
-            ><img
-              width="30"
-              height="30"
-              src="./assets/github.png"
-              alt="GitHub Link"
-          /></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-muted" href="https://www.linkedin.com/in/tolivas/"
-            ><img
-              width="30"
-              height="30"
-              src="./assets/linkedIn.png"
-              alt="LinkedIn Link"
-          /></a>
-        </li>
-      </ul>
-    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

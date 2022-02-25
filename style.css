@@ -1,5 +1,125 @@
+/* BODY */
 body {
   font-family: 'Manrope', sans-serif;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* HEADER */
+header {
+  background: transparent;
+}
+.color-me {
+  color: #b05b3b !important;
+}
+.navbar-toggler-icon {
+  border-color: #b05b3b;
+}
+
+/* LANDING */
+#intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  background-image: url('./assets/earthlandscape.jpeg');
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background-attachment: fixed;
+}
+.back {
+  height: 750px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
+}
+
+.introText {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.295);
+  color: #d79771;
+  border: 3px solid #faf1e228;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 75%;
+  padding: 30px;
+  text-align: center;
+}
+
+.h1Text {
+  font-size: 70px;
+}
+
+/* ABOUT */
+#about {
+  background-color: #faf1e2;
+  color: #b05b3b;
+}
+.selfPic {
+  width: 60%;
+  border-radius: 15px;
+  border: #753422;
+}
+.logo {
+  filter: invert(45%) sepia(26%) saturate(1299%) hue-rotate(331deg)
+    brightness(85%) contrast(83%);
+  -webkit-filter: invert(45%) sepia(26%) saturate(1299%) hue-rotate(331deg)
+    brightness(85%) contrast(83%);
+}
+
+.pText {
+  font-size: 18px;
+}
+
+/* PORTFOLIO */
+#portfolio {
+  background-color: #faf1e2;
+  color: #b05b3b;
+}
+
+.card {
+  background-color: #faf1e2;
+  border: #b05b3b solid 1px;
+}
+
+/* FORM */
+#contact {
+  background-color: #faf1e2;
+  color: #b05b3b;
+}
+
+.btn {
+  background-color: #b05b3b;
+  color: #faf1e2;
+}
+
+.modal-content {
+  background-color: #faf1e2;
+}
+
+.modal-title {
+  color: #753422;
+  margin-left: 35%;
+}
+
+.modal-header {
+  border-bottom: 0 none;
 }
 
 #fs-frm input,
@@ -11,9 +131,9 @@ body {
 #fs-frm #card-element:disabled {
   font-family: inherit;
   font-size: 100%;
-  color: inherit;
+  color: #753422;
   border: none;
-  border-radius: 0;
+  border-radius: 7px;
   display: block;
   width: 100%;
   padding: 0;
@@ -21,90 +141,72 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
   font-size: 0.825rem;
-  margin-bottom: 0.5rem;
-  padding-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-top: 0.1rem;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  color: #753422;
 }
 
-/* border, padding, margin, width */
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm #card-element {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #753422;
+  background-color: #faf1e2;
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
 }
+
 #fs-frm input:focus,
 #fs-frm select:focus,
 #fs-frm textarea:focus {
-  background-color: white;
+  background-color: #d7967183;
   outline-style: solid;
   outline-width: thin;
-  outline-color: gray;
+  outline-color: #753422;
   outline-offset: -1px;
 }
+
 #fs-frm [type='text'],
 #fs-frm [type='email'] {
   width: 100%;
 }
-#fs-frm [type='button'],
-#fs-frm [type='submit'],
-#fs-frm [type='reset'] {
+
+#fs-frm [type='submit'] {
   width: auto;
   cursor: pointer;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
 }
-#fs-frm [type='button']:focus,
-#fs-frm [type='submit']:focus,
-#fs-frm [type='reset']:focus {
+
+#fs-frm [type='submit']:focus {
   outline: none;
 }
-#fs-frm [type='submit'],
-#fs-frm [type='reset'] {
-  margin-bottom: 0;
+
+#fs-frm [type='submit'] {
+  margin-bottom: 6;
 }
+
 #fs-frm select {
   text-transform: none;
 }
 
-#fs-frm [type='checkbox'] {
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
-  display: inline-block;
-  width: auto;
-  margin: 0 0.5em 0 0 !important;
+/* FOOTER */
+footer {
+  background-color: #753422;
+  color: #faf1e2;
 }
 
-#fs-frm [type='radio'] {
-  -webkit-appearance: radio;
-  -moz-appearance: radio;
-  appearance: radio;
-}
-
-/* address, locale */
-#fs-frm fieldset.locale input[name='city'],
-#fs-frm fieldset.locale select[name='state'],
-#fs-frm fieldset.locale input[name='postal-code'] {
-  display: inline;
-}
-#fs-frm fieldset.locale input[name='city'] {
-  width: 52%;
-}
-#fs-frm fieldset.locale select[name='state'],
-#fs-frm fieldset.locale input[name='postal-code'] {
-  width: 20%;
-}
-#fs-frm fieldset.locale input[name='city'],
-#fs-frm fieldset.locale select[name='state'] {
-  margin-right: 3%;
+.smallLogo {
+  filter: invert(95%) sepia(10%) saturate(1085%) hue-rotate(306deg)
+    brightness(108%) contrast(97%);
+  -webkit-filter: invert(95%) sepia(10%) saturate(1085%) hue-rotate(306deg)
+    brightness(108%) contrast(97%);
 }
