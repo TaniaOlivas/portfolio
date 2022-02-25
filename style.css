@@ -1,16 +1,25 @@
 /* BODY */
 body {
   font-family: 'Manrope', sans-serif;
+  background-color: #faf1e2;
 }
 .wrapper {
   position: relative;
   width: 100%;
 }
 
+.title {
+  width: 40%;
+  color: #753422;
+  font-size: 100px;
+}
+
 /* HEADER */
 header {
   background: transparent;
+  background-color: #faf1e2;
 }
+
 .color-me {
   color: #b05b3b !important;
 }
@@ -48,10 +57,10 @@ header {
 }
 
 .introText {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.295);
-  color: #d79771;
-  border: 3px solid #faf1e228;
+  background-color: #faf1e2;
+  background-color: #faf1e242;
+  color: #753422;
+  border: 3px solid #faf1e242;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -70,6 +79,7 @@ header {
 #about {
   background-color: #faf1e2;
   color: #b05b3b;
+  padding-bottom: 5%;
 }
 .selfPic {
   width: 60%;
@@ -77,10 +87,17 @@ header {
   border: #753422;
 }
 .logo {
-  filter: invert(45%) sepia(26%) saturate(1299%) hue-rotate(331deg)
-    brightness(85%) contrast(83%);
-  -webkit-filter: invert(45%) sepia(26%) saturate(1299%) hue-rotate(331deg)
-    brightness(85%) contrast(83%);
+  filter: invert(24%) sepia(11%) saturate(3098%) hue-rotate(326deg)
+    brightness(98%) contrast(96%);
+  -webkit-filter: invert(24%) sepia(11%) saturate(3098%) hue-rotate(326deg)
+    brightness(98%) contrast(96%);
+}
+
+.logo:hover {
+  filter: invert(41%) sepia(76%) saturate(449%) hue-rotate(331deg)
+    brightness(86%) contrast(89%);
+  -webkit-filter: invert(41%) sepia(76%) saturate(449%) hue-rotate(331deg)
+    brightness(86%) contrast(89%);
 }
 
 .pText {
@@ -98,13 +115,36 @@ header {
   border: #b05b3b solid 1px;
 }
 
+/* SKILLS */
+#skills {
+  background-color: #faf1e2;
+  color: #b05b3b;
+  height: 700px;
+  padding-top: 6%;
+}
+.elementPic {
+  padding-top: 20%;
+  height: 100%;
+  filter: invert(41%) sepia(76%) saturate(449%) hue-rotate(331deg)
+    brightness(86%) contrast(89%);
+  -webkit-filter: invert(41%) sepia(76%) saturate(449%) hue-rotate(331deg)
+    brightness(86%) contrast(89%);
+}
+
 /* FORM */
 #contact {
   background-color: #faf1e2;
   color: #b05b3b;
+  height: 500px;
+  padding-top: 5%;
 }
 
 .btn {
+  background-color: #753422;
+  color: #faf1e2;
+}
+
+.btn:hover {
   background-color: #b05b3b;
   color: #faf1e2;
 }
