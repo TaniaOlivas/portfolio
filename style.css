@@ -135,6 +135,7 @@ body {
 .btn-about:hover {
   color: #faf1e2;
   background-color: #a16555d0;
+  transform: scale(1.1);
 }
 
 /* SKILLS */
@@ -224,8 +225,8 @@ body {
 }
 
 .btn-contact:hover {
-  background-color: #b05b3b;
-  color: #faf1e2;
+  background-color: #faf1e28f !important;
+  transform: scale(1.1) !important;
 }
 
 .h4Text {
@@ -243,6 +244,10 @@ body {
   font-size: 45px;
 }
 
+.logo:hover {
+  color: #faf1e28f;
+}
+
 .modal-content {
   background-color: #faf1e2;
 }
@@ -257,8 +262,9 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: #a16655;
-  color: #faf1e2;
+  transform: scale(1.1);
+  background-color: #a16655 !important;
+  color: #faf1e2 !important;
 }
 
 #fs-frm input,
