@@ -9,6 +9,7 @@ body {
 }
 
 .title {
+  font-family: 'Sansita Swashed', cursive;
   font-size: 6.5vw;
 }
 
@@ -29,6 +30,10 @@ body {
 .offcanvas {
   width: 250px;
   background-color: #a16655;
+}
+
+.offcanvas-title {
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .justify-content-center {
@@ -96,6 +101,10 @@ body {
   text-align: center;
 }
 
+.introName {
+  padding-bottom: 25px;
+}
+
 .h1Text {
   font-size: 75px;
 }
@@ -117,6 +126,7 @@ body {
 }
 
 .about-me {
+  margin-top: 10%;
   font-size: 17px;
 }
 .selfPic {
@@ -130,6 +140,7 @@ body {
   background-color: #a16655;
   color: #faf1e2;
   font-size: 1.2vw;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .btn-about:hover {
@@ -173,6 +184,7 @@ body {
 }
 
 .portfolio-title {
+  font-family: 'Sansita Swashed', cursive;
   font-size: 6.5vw;
   color: #faf1e2;
 }
@@ -212,6 +224,10 @@ body {
   border: 0;
 }
 
+.card-title {
+  font-family: 'Sansita Swashed', cursive;
+}
+
 /* FORM */
 #contact {
   background-color: #a16655;
@@ -222,6 +238,7 @@ body {
 .btn-contact {
   background-color: #faf1e2 !important;
   color: #a16655 !important;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .btn-contact:hover {
@@ -230,6 +247,7 @@ body {
 }
 
 .h4Text {
+  font-family: 'Sansita Swashed', cursive;
   font-size: 30px;
 }
 
@@ -283,8 +301,6 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 #fs-frm label,
@@ -346,6 +362,9 @@ body {
 /* MEDIA */
 
 @media screen and (max-width: 1170px) {
+  .about-me {
+    margin-top: 5%;
+  }
   .selfPic {
     height: 400px;
   }
@@ -356,7 +375,7 @@ body {
     height: 300px;
   }
   .about-me {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .btn-div {
@@ -365,8 +384,20 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
+
+  .portfolio-title {
+    text-align: center;
+  }
+
+  .introName {
+    width: 100%;
+  }
   .selfPic {
     height: 245px;
+    margin-bottom: 15px;
   }
   .about-me {
     font-size: 12px;
@@ -398,6 +429,10 @@ body {
   }
 }
 @media screen and (max-width: 575px) {
+  .introName {
+    width: 100%;
+  }
+
   .service-icon {
     height: 5.5rem;
     width: 5.5rem;
@@ -446,6 +481,9 @@ body {
 }
 
 @media screen and (max-width: 736px) {
+  .introName {
+    width: 100%;
+  }
   .h1Text {
     font-size: 70px;
   }
@@ -460,6 +498,10 @@ body {
 }
 
 @media screen and (max-width: 475px) {
+  .introName {
+    width: 100%;
+  }
+
   .h1Text {
     font-size: 50px;
   }

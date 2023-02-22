@@ -21,6 +21,12 @@
       href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
     <script
@@ -107,7 +113,7 @@
                       <li>
                         <a
                           class="dropdown-item"
-                          href="./assets/masterResume.pdf"
+                          href="./assets/resume.pdf"
                           target="_blank"
                           ><i class="fa-solid fa-file-arrow-down"></i> Resume</a
                         >
@@ -142,7 +148,12 @@
           <div class="introText container">
             <div class="row">
               <div class="col-sm-12 px-1">
-                <h1 class="h1Text">Tania Olivas</h1>
+                <img
+                  src="./assets/Tania Olivas.png"
+                  alt="Name"
+                  class="introName"
+                />
+                <!-- <h1 class="h1Text">Tania Olivas</h1> -->
               </div>
             </div>
             <div class="row">
@@ -163,27 +174,26 @@
       <!-- ABOUT -->
       <section id="about">
         <div class="container">
+          <h1 class="py-3 m-0 title">About Me</h1>
           <div class="row">
             <div class="col-sm-8 pText">
               <div class="row">
-                <div class="col-8">
-                  <h1 class="py-3 m-0 title">About Me</h1>
-                </div>
-              </div>
-              <div class="row">
                 <div class="about-me p-2">
                   <p>
-                    Hello! My name is Tania Olivas and I am a recent graduate of
-                    Eleven Fifty Academy's Web Development course. As a
-                    first-generation college student and daughter of 2 immigrant
-                    parents, I know and embody the value of dedication and hard
-                    work.
+                    Hello! My name is Tania Olivas and I am a non-traditional
+                    tech enthusiast. I have an unusual background that isn't
+                    common in web developers, but I believe that it makes me a
+                    more diverse individual. As a first-generation college
+                    student and daughter of 2 immigrant parents, I know and
+                    embody the value of dedication and hard work. This is the
+                    reason why I know I can make this transition into the tech
+                    industry.
                   </p>
                   <p>
                     I have previous experience as a Nursing Home Administrator,
                     but then realized that some of my core values and strengths
                     were not aligning well with my career and decided to change
-                    my trek. Continuous learning and growth are very important
+                    my path. Continuous learning and growth are very important
                     to me in a career and the tech industry vastly incorporates
                     both of those. So, I decided to take a leap of faith and
                     join the software developers of this world.
@@ -203,14 +213,14 @@
               class="col-sm-4 pb-3 pt-4 align-self-center justify-content-center picture-div"
             >
               <img
-                src="./assets/Picture.jpeg"
+                src="./assets/portrait.jpg"
                 alt="Picture of Me"
                 class="selfPic"
               />
             </div>
           </div>
           <div class="btn-div">
-            <a href="./assets/masterResume.pdf" target="_blank">
+            <a href="./assets/resume.pdf" target="_blank">
               <button class="btn btn-about">Download Resume</button>
             </a>
           </div>
@@ -288,47 +298,7 @@
               Portfolio
             </h1>
             <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
-              <div class="col text-center">
-                <div class="card h-100">
-                  <img
-                    src="./assets/i8that.png"
-                    class="card-img-top p-3"
-                    alt="i8That Home Page"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">i8That App</h5>
-                    <p class="card-text">
-                      A full stack website made with PostgresSQL, Express,
-                      React, Node.js.
-                    </p>
-                    <a
-                      href="https://to-i8that-client.herokuapp.com/"
-                      class="btn btn-about"
-                      >Visit</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col text-center">
-                <div class="card h-100">
-                  <img
-                    src="./assets/cafeOlivas.png"
-                    class="card-img-top p-3"
-                    alt="Cafe Olivas Home Page"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Café Olivas</h5>
-                    <p class="card-text">
-                      A static demo page made strictly with HTML5 and CSS3.
-                    </p>
-                    <a
-                      href="https://taniaolivas.github.io/StaticStoreFront/"
-                      class="btn btn-about"
-                      >Visit</a
-                    >
-                  </div>
-                </div>
-              </div>
+              <!-- bookNook -->
               <div class="col text-center">
                 <div class="card h-100">
                   <img
@@ -350,6 +320,50 @@
                   </div>
                 </div>
               </div>
+              <!-- Cafe Olivas -->
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img
+                    src="./assets/cafeOlivas.png"
+                    class="card-img-top p-3"
+                    alt="Cafe Olivas Home Page"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Café Olivas</h5>
+                    <p class="card-text">
+                      A static demo page made strictly with HTML5 and CSS3.
+                    </p>
+                    <a
+                      href="https://taniaolivas.github.io/StaticStoreFront/"
+                      class="btn btn-about"
+                      >Visit</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- i8that -->
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img
+                    src="./assets/i8that.png"
+                    class="card-img-top p-3"
+                    alt="i8That Home Page"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">i8That App</h5>
+                    <p class="card-text">
+                      A full stack website made with PostgresSQL, Express,
+                      React, Node.js.
+                    </p>
+                    <a
+                      href="https://to-i8that-client.herokuapp.com/"
+                      class="btn btn-about"
+                      >Visit</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- 24HourProject -->
               <div class="col text-center">
                 <div class="card h-100">
                   <img
