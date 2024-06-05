@@ -45,7 +45,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-light fixed-top nav-transparent">
           <div class="container-fluid">
-            <a href="#"></a>
+            <a href="#" aria-label="Open navigation bar"></a>
             <button
               class="navbar-toggler color-me"
               type="button"
@@ -96,16 +96,15 @@
                     <a class="nav-link color-me" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle color-me"
+                    <button
+                      class="nav-link dropdown-toggle color-me navButton"
                       href="#"
                       id="navbarDarkDropdownMenuLink"
-                      role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       More Information
-                    </a>
+                    </button>
                     <ul
                       class="dropdown-menu"
                       aria-labelledby="navbarDropdownMenuLink"
@@ -153,7 +152,6 @@
                   alt="Name"
                   class="introName"
                 />
-                <!-- <h1 class="h1Text">Tania Olivas</h1> -->
               </div>
             </div>
             <div class="row">
@@ -180,14 +178,16 @@
               <div class="row">
                 <div class="about-me p-2">
                   <p>
-                    Hello! My name is Tania Olivas and I am a non-traditional
-                    tech enthusiast. I have an unusual background that isn't
-                    common in web developers, but I believe that it makes me a
-                    more diverse individual. As a first-generation college
-                    student and daughter of 2 immigrant parents, I know and
-                    embody the value of dedication and hard work. This is the
-                    reason why I know I can make this transition into the tech
-                    industry.
+                    Hello! My name is Tania Olivas and I am a senior at Purdue
+                    University in Indianapolis studying Computer and Information
+                    Technology with a concentration in Web and Software
+                    Development. As a first-generation college student and
+                    daughter of 2 immigrant parents, I know and embody the value
+                    of dedication and hard work. With my passion for coding and
+                    learning, diverse background, strong communication skills
+                    and ability to collaborate well in a team environment, I am
+                    believe I can be an asset to the Software Developers of the
+                    world.
                   </p>
                   <p>
                     I have previous experience as a Nursing Home Administrator,
@@ -195,16 +195,16 @@
                     were not aligning well with my career and decided to change
                     my path. Continuous learning and growth are very important
                     to me in a career and the tech industry vastly incorporates
-                    both of those. So, I decided to take a leap of faith and
-                    join the software developers of this world.
+                    both of those. So, I decided to take a leap of faith, return
+                    to college and join the software developers of this world.
                   </p>
                   <p>
-                    Although I am very new to the tech industry, I have already
+                    Although I am new to the tech industry, I have already
                     learned so much and am eager to learn much more. I pride
                     myself in being self-motivated, detail-oriented, and enjoy
                     problem-solving, all which align very well within the tech
                     world. I hope to put some of my strengths to work and join a
-                    team as a Web Developer.
+                    team as a Software Developer.
                   </p>
                 </div>
               </div>
@@ -214,7 +214,7 @@
             >
               <img
                 src="./assets/portrait.jpg"
-                alt="Picture of Me"
+                alt="Hispanic girl in black shirt, smiling"
                 class="selfPic"
               />
             </div>
@@ -254,11 +254,11 @@
               <span class="service-icon rounded-circle mx-auto mb-3 ts-icon">
                 <img
                   class="typescript-icon"
-                  src="assets/typescript_icon.svg"
+                  src="assets/jquery-icon.svg"
                   alt="..."
                 />
               </span>
-              <h4><strong>TypeScript</strong></h4>
+              <h4><strong>jQuery</strong></h4>
             </div>
           </div>
           <div class="row gx-4 gx-lg-5 mb-lg-4 text-center">
@@ -270,15 +270,15 @@
             </div>
             <div class="col-3 mb-2 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <i class="fa-brands fa-node"></i>
+                <i class="fa-brands fa-java"></i>
               </span>
-              <h4><strong>Node.JS</strong></h4>
+              <h4><strong>Java</strong></h4>
             </div>
             <div class="col-3 mb-2 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-python"></i>
               </span>
-              <h4><strong>Git</strong></h4>
+              <h4><strong>Python</strong></h4>
             </div>
             <div class="col-3 mb-2 mb-lg-0">
               <span class="service-icon rounded-circle mx-auto mb-3">
@@ -299,7 +299,7 @@
             </h1>
             <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4">
               <!-- bookNook -->
-              <div class="col text-center">
+              <!-- <div class="col text-center">
                 <div class="card h-100">
                   <img
                     src="./assets/booknook.png"
@@ -319,6 +319,29 @@
                     >
                   </div>
                 </div>
+              </div> -->
+              <!-- Books To Read -->
+              <div class="col text-center">
+                <div class="card h-100">
+                  <img
+                    src="./assets/bookFinal.png"
+                    class="card-img-top p-3"
+                    alt="Book To Read Home Page"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Books To Read</h5>
+                    <p class="card-text">
+                      An application created using jQuery that uses the Google
+                      Books API. This app allows the user to create, read,
+                      update and delete books from the Google Books API.
+                    </p>
+                    <a
+                      href="https://pages.github.iu.edu/tolivas/finalProject/"
+                      class="btn btn-about"
+                      >Visit</a
+                    >
+                  </div>
+                </div>
               </div>
               <!-- Cafe Olivas -->
               <div class="col text-center">
@@ -331,7 +354,8 @@
                   <div class="card-body">
                     <h5 class="card-title">Café Olivas</h5>
                     <p class="card-text">
-                      A static demo page made strictly with HTML5 and CSS3.
+                      A static demo page made strictly with HTML5, CSS3 and the
+                      Bootstrap library.
                     </p>
                     <a
                       href="https://taniaolivas.github.io/StaticStoreFront/"
@@ -342,7 +366,7 @@
                 </div>
               </div>
               <!-- i8that -->
-              <div class="col text-center">
+              <!-- <div class="col text-center">
                 <div class="card h-100">
                   <img
                     src="./assets/i8that.png"
@@ -362,7 +386,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- 24HourProject -->
               <div class="col text-center">
                 <div class="card h-100">
@@ -374,9 +398,10 @@
                   <div class="card-body">
                     <h5 class="card-title">24 Hour Project</h5>
                     <p class="card-text">
-                      A page that utilizes the user's location and presents the
-                      temperature, events nearby, and a satellite image
-                      utilizing 3 different APIs. It was made within 24 hours.
+                      A React app that utilizes the user's location and presents
+                      the temperature, events nearby, satellite image and map
+                      image utilizing 4 different APIs. It was made within 24
+                      hours.
                     </p>
                     <a
                       href="https://taniaolivas.github.io/24-hour-project/"

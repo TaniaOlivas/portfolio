@@ -59,6 +59,12 @@ body {
   color: #a16655;
 }
 
+.navButton {
+  background-color: #a16655;
+  border: none;
+  margin-left: 30px;
+}
+
 /* LANDING */
 #intro {
   position: relative;
@@ -172,9 +178,9 @@ body {
   height: 33px;
   border-radius: 10%;
   margin-bottom: 10px;
-  filter: invert(44%) sepia(25%) saturate(787%) hue-rotate(327deg)
+  filter: invert(44%) sepia(43%) saturate(481%) hue-rotate(327deg)
     brightness(94%) contrast(86%);
-  -webkit-filter: invert(44%) sepia(25%) saturate(787%) hue-rotate(327deg)
+  -webkit-filter: invert(44%) sepia(43%) saturate(481%) hue-rotate(327deg)
     brightness(94%) contrast(86%);
 }
 
